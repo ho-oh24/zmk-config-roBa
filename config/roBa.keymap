@@ -85,7 +85,7 @@
 &kp Q                &kp X          &kp U          &kp COMMA      &kp DOT                                                            &kp F           &kp Z           &kp R           &kp Y          &kp P
 &mt RIGHT_CONTROL E   &mt LEFT_ALT I &mt LEFT_CONTROL A  &mt LEFT_SHIFT O  &mt LEFT_WIN MINUS  &none                    &mt LEFT_WIN K  &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT S  &mt RIGHT_CONTROL H  &none
 &kp J                &kp L          &kp C          &kp V          &kp SQT        &none                       &kp G           &kp D           &kp M           &kp W          &kp B          &none
-&kp LEFT_WIN         &kp ESCAPE  &lt 1 BACKSPACE  &lt_to_layer_0 6 INT_HENKAN  &kp SPACE  &lt 3 SLASH      &lt 2 ENTER  &kp INT_MUHENKAN                        &kp DELETE
+&kp LEFT_WIN         &kp ESCAPE  &lt 3 SLASH  &lt 1 BACKSPACE  &kp SPACE  &lt_to_layer_0 6 INT_HENKAN      &kp INT_MUHENKAN  &lt 2 ENTER                        &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;

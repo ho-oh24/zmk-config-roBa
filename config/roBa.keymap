@@ -55,6 +55,126 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        ime_off {
+            bindings = <&kp INT_MUHENKAN>;
+            key-positions = <23 24>;
+        };
+
+        ime_on {
+            bindings = <&kp INT_HENKAN>;
+            key-positions = <31 32>;
+        };
+
+        bs_word {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <26 37>;
+        };
+
+        fluent_search {
+            bindings = <&kp F20>;
+            key-positions = <37 41>;
+        };
+
+        kill_left {
+            bindings = <&kill_left_macro>;
+            key-positions = <10 37>;
+        };
+
+        kill_right {
+            bindings = <&kill_right_macro>;
+            key-positions = <21 37>;
+        };
+
+        kill_all {
+            bindings = <&kill_all_macro>;
+            key-positions = <9 37>;
+        };
+
+        bs2 {
+            bindings = <&bs2_macro>;
+            key-positions = <11 37>;
+        };
+
+        bs3 {
+            bindings = <&bs3_macro>;
+            key-positions = <12 37>;
+        };
+
+        bs4 {
+            bindings = <&bs4_macro>;
+            key-positions = <13 37>;
+        };
+
+        bs5 {
+            bindings = <&bs5_macro>;
+            key-positions = <14 37>;
+        };
+
+        bs6 {
+            bindings = <&bs6_macro>;
+            key-positions = <17 37>;
+        };
+
+        bs7 {
+            bindings = <&bs7_macro>;
+            key-positions = <18 37>;
+        };
+
+        bs8 {
+            bindings = <&bs8_macro>;
+            key-positions = <19 37>;
+        };
+
+        bs9 {
+            bindings = <&bs9_macro>;
+            key-positions = <20 37>;
+        };
+
+        del1 {
+            bindings = <&kp DELETE>;
+            key-positions = <0 37>;
+        };
+
+        del2 {
+            bindings = <&del2_macro>;
+            key-positions = <1 37>;
+        };
+
+        del3 {
+            bindings = <&del3_macro>;
+            key-positions = <2 37>;
+        };
+
+        del4 {
+            bindings = <&del4_macro>;
+            key-positions = <3 37>;
+        };
+
+        del5 {
+            bindings = <&del5_macro>;
+            key-positions = <4 37>;
+        };
+
+        del6 {
+            bindings = <&del6_macro>;
+            key-positions = <5 37>;
+        };
+
+        del7 {
+            bindings = <&del7_macro>;
+            key-positions = <6 37>;
+        };
+
+        del8 {
+            bindings = <&del8_macro>;
+            key-positions = <7 37>;
+        };
+
+        del9 {
+            bindings = <&del9_macro>;
+            key-positions = <8 37>;
+        };
     };
 
     macros {
@@ -63,6 +183,120 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        kill_left_macro: kill_left_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(HOME)>, <&kp BACKSPACE>;
+        };
+
+        kill_right_macro: kill_right_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(END)>, <&kp BACKSPACE>;
+        };
+
+        kill_all_macro: kill_all_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp HOME>, <&kp LS(END)>, <&kp BACKSPACE>;
+        };
+
+        bs2_macro: bs2_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp BACKSPACE>;
+        };
+
+        bs3_macro: bs3_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>;
+        };
+
+        bs4_macro: bs4_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>;
+        };
+
+        bs5_macro: bs5_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>;
+        };
+
+        bs6_macro: bs6_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>;
+        };
+
+        bs7_macro: bs7_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>;
+        };
+
+        bs8_macro: bs8_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>;
+        };
+
+        bs9_macro: bs9_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>;
+        };
+
+        del2_macro: del2_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DELETE>, <&kp DELETE>;
+        };
+
+        del3_macro: del3_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DELETE>, <&kp DELETE>, <&kp DELETE>;
+        };
+
+        del4_macro: del4_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>;
+        };
+
+        del5_macro: del5_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>;
+        };
+
+        del6_macro: del6_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>;
+        };
+
+        del7_macro: del7_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>;
+        };
+
+        del8_macro: del8_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>;
+        };
+
+        del9_macro: del9_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>, <&kp DELETE>;
         };
     };
 
@@ -85,7 +319,7 @@
 &kp Q                &kp X          &kp U          &kp COMMA      &kp DOT                                                            &kp F           &kp Z           &kp R           &kp Y          &kp P
 &mt RIGHT_CONTROL E   &mt LEFT_ALT I &mt LEFT_CONTROL A  &mt LEFT_SHIFT O  &mt LEFT_WIN MINUS  &none                    &none  &mt LEFT_WIN K  &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT S  &mt RIGHT_CONTROL H
 &kp J                &kp L          &kp C          &kp V          &kp SQT        &none                       &none  &kp G           &kp D           &kp M           &kp W          &kp B
-&kp LEFT_WIN         &kp ESCAPE  &lt 3 SLASH  &lt 1 BACKSPACE  &kp SPACE  &lt_to_layer_0 6 INT_HENKAN      &kp INT_MUHENKAN  &lt 2 ENTER                        &kp DELETE
+&kp LEFT_WIN         &kp ESCAPE  &lt 3 SLASH  &lt 1 BACKSPACE  &kp SPACE  &lt_to_layer_0 6 INT_HENKAN      &kp INT_HENKAN  &lt 2 ENTER                        &kp DELETE
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };

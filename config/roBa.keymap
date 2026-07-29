@@ -33,13 +33,13 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <14 38>;
             timeout-ms = <100>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+            key-positions = <4 38>;
             timeout-ms = <100>;
         };
 

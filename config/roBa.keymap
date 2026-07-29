@@ -358,7 +358,7 @@
             label = "MT_MINUS_MORPH";
             bindings = <&kp>, <&minus_shift_morph>;
 
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
@@ -369,7 +369,7 @@
             label = "LT_SLASH_MORPH";
             bindings = <&mo>, <&slash_shift_morph>;
 
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
@@ -382,9 +382,9 @@
         default_layer {
             bindings = <
 &kp Q                &kp X          &kp U          &comma_shift_morph      &dot_shift_morph                                                            &kp F           &kp Z           &kp R           &kp Y          &kp P
-&mt RIGHT_CONTROL E   &mt LEFT_ALT I &mt LEFT_CONTROL A  &mt LEFT_SHIFT O  &mt_minus_morph LEFT_WIN  &none                    &none  &mt LEFT_WIN K  &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT S  &mt RIGHT_CONTROL H
+&mt RIGHT_CONTROL E   &mt LEFT_ALT I &mt LEFT_CONTROL A  &mt LEFT_SHIFT O  &mt_minus_morph LEFT_WIN 0  &none                    &none  &mt LEFT_WIN K  &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT S  &mt RIGHT_CONTROL H
 &kp J                &kp L          &kp C          &kp V          &quot_shift_morph        &none                       &none  &kp G           &kp D           &kp M           &kp W          &kp B
-&kp LEFT_WIN         &kp ESCAPE  &lt_slash_morph 3  &lt 1 BACKSPACE  &kp SPACE  &lt_to_layer_0 6 INT_HENKAN      &kp INT_HENKAN  &lt 2 ENTER                        &kp DELETE
+&kp LEFT_WIN         &kp ESCAPE  &lt_slash_morph 3 0  &lt 1 BACKSPACE  &kp SPACE  &lt_to_layer_0 6 INT_HENKAN      &kp INT_HENKAN  &lt 2 ENTER                        &kp DELETE
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };

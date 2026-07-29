@@ -391,7 +391,7 @@
 
         NAV {
             bindings = <
-&kp LC(LS(Z))  &kp HOME       &kp UP_ARROW   &kp END        &kp PAGE_UP                                            &kp HASH           &kp RIGHT_BRACKET  &kp BACKSLASH  &kp AT_SIGN     &kp GRAVE
+&kp ESCAPE  &kp HOME       &kp UP_ARROW   &kp END        &kp PAGE_UP                                            &kp HASH           &kp RIGHT_BRACKET  &kp BACKSLASH  &kp AT_SIGN     &kp LS(INT3)
 &mt LEFT_SHIFT KP_MINUS  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp KP_PLUS  &trans      &trans  &kp LEFT_BRACKET  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp AMPERSAND  &kp DOLLAR
 &kp LC(Z)      &kp LC(X)      &kp LC(C)      &kp LC(V)      &kp PAGE_DOWN  &trans                  &trans  &kp PERCENT       &kp RIGHT_BRACE    &kp PIPE       &kp LEFT_BRACE  &kp CARET
 &trans         &trans         &trans         &trans         &trans         &kp INT1               &trans          &trans                                          &trans

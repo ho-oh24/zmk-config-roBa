@@ -404,7 +404,7 @@
             bindings = <
 &kp F1   &kp F2  &kp F3  &kp F4  &kp F5                                                    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans      &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp LESS_THAN  &kp UNDERSCORE  &kp GREATER_THAN  &kp QUESTION  &kp HASH  &trans      &trans  &kp LEFT_BRACKET  &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp EQUAL
+&kp LESS_THAN  &kp EQUAL  &kp GREATER_THAN  &kp LS(INT1)  &kp HASH  &trans      &trans  &kp LEFT_BRACKET  &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp EQUAL
 &trans   &trans          &trans          &trans            &trans             &trans        &trans         &trans                              &trans
             >;
         };
@@ -421,8 +421,8 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB4  &mkp MB3    &mkp MB5    &kp LEFT_SHIFT
-&kp RIGHT_CONTROL  &kp LEFT_ALT  &mkp MB4  &mkp MB5  &trans  &trans      &trans  &mkp MB4  &mkp MB1  &mo 5  &mkp MB2  &mkp MB5
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &kp RIGHT_CONTROL
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB1  &mkp MB2    &mo 5    &trans  &kp RIGHT_CONTROL
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };

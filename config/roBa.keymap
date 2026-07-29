@@ -34,21 +34,25 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
+            timeout-ms = <100>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
             key-positions = <12 13>;
+            timeout-ms = <100>;
         };
 
         muhennkann {
             bindings = <&to_layer_0 INT_MUHENKAN>;
             key-positions = <11 10>;
+            timeout-ms = <100>;
         };
 
         double_quotation {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
+            timeout-ms = <100>;
         };
 
         eq {
@@ -71,7 +75,7 @@
             key-positions = <26 37>;
         };
 
-        fluent_search {
+        flow_launcher {
             bindings = <&kp F20>;
             key-positions = <37 41>;
         };

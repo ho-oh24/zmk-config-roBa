@@ -6,8 +6,12 @@
 
 &mt {
     flavor = "balanced";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <0>;
+    tapping-term-ms = <150>;
+};
+
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <150>;
 };
 
 &trackball {
@@ -59,126 +63,151 @@
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
+            timeout-ms = <80>;
         };
 
         ime_off {
             bindings = <&kp INT_MUHENKAN>;
             key-positions = <23 24>;
+            timeout-ms = <80>;
         };
 
         ime_on {
             bindings = <&kp INT_HENKAN>;
             key-positions = <31 32>;
+            timeout-ms = <80>;
         };
 
         bs_word {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <26 37>;
+            timeout-ms = <80>;
         };
 
         flow_launcher {
             bindings = <&kp F20>;
             key-positions = <37 41>;
+            timeout-ms = <80>;
         };
 
         kill_left {
             bindings = <&kill_left_macro>;
             key-positions = <10 37>;
+            timeout-ms = <80>;
         };
 
         kill_right {
             bindings = <&kill_right_macro>;
             key-positions = <21 37>;
+            timeout-ms = <80>;
         };
 
         kill_all {
             bindings = <&kill_all_macro>;
             key-positions = <9 37>;
+            timeout-ms = <80>;
         };
 
         bs2 {
             bindings = <&bs2_macro>;
             key-positions = <11 37>;
+            timeout-ms = <80>;
         };
 
         bs3 {
             bindings = <&bs3_macro>;
             key-positions = <12 37>;
+            timeout-ms = <80>;
         };
 
         bs4 {
             bindings = <&bs4_macro>;
             key-positions = <13 37>;
+            timeout-ms = <80>;
         };
 
         bs5 {
             bindings = <&bs5_macro>;
             key-positions = <14 37>;
+            timeout-ms = <80>;
         };
 
         bs6 {
             bindings = <&bs6_macro>;
             key-positions = <17 37>;
+            timeout-ms = <80>;
         };
 
         bs7 {
             bindings = <&bs7_macro>;
             key-positions = <18 37>;
+            timeout-ms = <80>;
         };
 
         bs8 {
             bindings = <&bs8_macro>;
             key-positions = <19 37>;
+            timeout-ms = <80>;
         };
 
         bs9 {
             bindings = <&bs9_macro>;
             key-positions = <20 37>;
+            timeout-ms = <80>;
         };
 
         del1 {
             bindings = <&kp DELETE>;
             key-positions = <0 37>;
+            timeout-ms = <80>;
         };
 
         del2 {
             bindings = <&del2_macro>;
             key-positions = <1 37>;
+            timeout-ms = <80>;
         };
 
         del3 {
             bindings = <&del3_macro>;
             key-positions = <2 37>;
+            timeout-ms = <80>;
         };
 
         del4 {
             bindings = <&del4_macro>;
             key-positions = <3 37>;
+            timeout-ms = <80>;
         };
 
         del5 {
             bindings = <&del5_macro>;
             key-positions = <4 37>;
+            timeout-ms = <80>;
         };
 
         del6 {
             bindings = <&del6_macro>;
             key-positions = <5 37>;
+            timeout-ms = <80>;
         };
 
         del7 {
             bindings = <&del7_macro>;
             key-positions = <6 37>;
+            timeout-ms = <80>;
         };
 
         del8 {
             bindings = <&del8_macro>;
             key-positions = <7 37>;
+            timeout-ms = <80>;
         };
 
         del9 {
             bindings = <&del9_macro>;
             key-positions = <8 37>;
+            timeout-ms = <80>;
         };
     };
 
@@ -312,7 +341,8 @@
             bindings = <&mo>, <&to_layer_0>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
         };
 
         comma_shift_morph: comma_shift_morph {
@@ -360,8 +390,7 @@
 
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
+            tapping-term-ms = <150>;
         };
 
         lt_slash_morph: lt_slash_morph {
@@ -371,8 +400,7 @@
 
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
+            tapping-term-ms = <150>;
         };
     };
 
@@ -382,9 +410,9 @@
         default_layer {
             bindings = <
 &kp Q                &kp X          &kp U          &comma_shift_morph      &dot_shift_morph                                                            &kp F           &kp Z           &kp R           &kp Y          &kp P
-&mt RIGHT_CONTROL E   &mt LEFT_ALT I &mt LEFT_CONTROL A  &mt LEFT_SHIFT O  &mt_minus_morph LEFT_WIN 0  &none                    &none  &mt LEFT_WIN K  &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT S  &mt RIGHT_CONTROL H
+&mt RIGHT_CONTROL E   &mt LEFT_ALT I &mt LEFT_CONTROL A  &mt LEFT_SHIFT O  &mt_minus_morph LEFT_WIN 0  &none                    &kp LA(TAB)  &mt LEFT_WIN K  &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT S  &mt RIGHT_CONTROL H
 &kp J                &kp L          &kp C          &kp V          &quot_shift_morph        &none                       &none  &kp G           &kp D           &kp M           &kp W          &kp B
-&kp LEFT_WIN         &kp ESCAPE  &lt_slash_morph 3 0  &lt 1 BACKSPACE  &kp SPACE  &lt_to_layer_0 6 INT_HENKAN      &kp INT_HENKAN  &lt 2 ENTER                        &kp DELETE
+&kp LEFT_WIN         &kp ESCAPE  &mo 6  &lt 1 BACKSPACE  &kp SPACE  &lt_slash_morph 3 0      &caps_word  &lt 2 ENTER                        &kp DELETE
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };

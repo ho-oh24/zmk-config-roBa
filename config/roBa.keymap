@@ -48,18 +48,6 @@
             timeout-ms = <100>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-            timeout-ms = <100>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-            timeout-ms = <100>;
-        };
-
         eq {
             bindings = <&kp LS(MINUS)>;
             key-positions = <24 25>;
@@ -410,7 +398,7 @@
         default_layer {
             bindings = <
 &kp Q                &kp X          &kp U          &comma_shift_morph      &dot_shift_morph                                                            &kp F           &kp Z           &kp R           &kp Y          &kp P
-&mt RIGHT_CONTROL E   &mt LEFT_ALT I &mt LEFT_CONTROL A  &mt LEFT_SHIFT O  &mt_minus_morph LEFT_WIN 0  &none                    &kp LA(TAB)  &mt LEFT_WIN K  &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT S  &mt RIGHT_CONTROL H
+&mt RIGHT_CONTROL E   &mt LEFT_ALT I &mt LEFT_CONTROL A  &mt LEFT_SHIFT O  &mt_minus_morph LEFT_WIN 0  &none                    &none  &mt LEFT_WIN K  &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT S  &mt RIGHT_CONTROL H
 &kp J                &kp L          &kp C          &kp V          &quot_shift_morph        &none                       &none  &kp G           &kp D           &kp M           &kp W          &kp B
 &kp LEFT_WIN         &kp ESCAPE  &mo 6  &lt 1 BACKSPACE  &kp SPACE  &lt_slash_morph 3 0      &caps_word  &lt 2 ENTER                        &kp DELETE
             >;
@@ -432,7 +420,7 @@
             bindings = <
 &kp F1   &kp F2  &kp F3  &kp F4  &kp F5                                                    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans      &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp LESS_THAN  &kp LS(MINUS)  &kp GREATER_THAN  &kp LS(INT1)  &kp HASH  &trans      &trans  &kp LEFT_BRACKET  &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp LS(MINUS)
+&kp LESS_THAN  &kp LS(MINUS)  &kp GREATER_THAN  &kp LS(INT1)  &kp HASH  &trans      &trans  &kp LEFT_BRACKET  &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp EQUAL
 &trans   &trans          &trans          &trans            &trans             &trans        &trans         &trans                              &trans
             >;
         };

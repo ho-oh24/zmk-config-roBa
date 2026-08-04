@@ -398,7 +398,7 @@
         default_layer {
             bindings = <
 &kp Q                &kp X          &kp U          &comma_shift_morph      &dot_shift_morph                                                            &kp F           &kp Z           &kp R           &kp Y          &kp P
-&mt RIGHT_CONTROL E   &mt LEFT_ALT I &mt LEFT_CONTROL A  &mt LEFT_SHIFT O  &mt_minus_morph LEFT_WIN 0  $caps_word                    &none  &mt LEFT_WIN K  &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT S  &mt RIGHT_CONTROL H
+&mt RIGHT_CONTROL E   &mt LEFT_ALT I &mt LEFT_CONTROL A  &mt LEFT_SHIFT O  &mt_minus_morph LEFT_WIN 0  &caps_word                    &none  &mt LEFT_WIN K  &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT S  &mt RIGHT_CONTROL H
 &kp J                &kp L          &kp C          &kp V          &quot_shift_morph        &none                       &none  &kp G           &kp D           &kp M           &kp W          &kp B
 &kp LEFT_WIN         &kp ESCAPE  &mo 3  &lt 1 BACKSPACE  &kp SPACE  &lt_slash_morph 6 0      &lt_slash_morph 3 0  &lt 2 ENTER                        &kp DELETE
             >;
@@ -407,9 +407,9 @@
 
         NAV {
             bindings = <
-&kp ESCAPE  &kp HOME       &kp UP_ARROW   &kp END        &kp PAGE_UP                                            &kp HASH           &kp RIGHT_BRACKET  &kp BACKSLASH  &kp AT_SIGN     &kp LS(INT3)
-&mt LEFT_SHIFT KP_MINUS  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp KP_PLUS  &trans      &trans  &kp LEFT_BRACKET  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp AMPERSAND  &kp DOLLAR
-&kp LC(Z)      &kp LC(X)      &kp LC(C)      &kp LC(V)      &kp PAGE_DOWN  &trans                  &trans  &kp PERCENT       &kp RIGHT_BRACE    &kp PIPE       &kp LEFT_BRACE  &kp CARET
+&kp ESCAPE     &kp HOME       &kp UP_ARROW    &kp END         &kp PAGE_UP                                      &kp HASH     &kp RIGHT_BRACKET  &kp BACKSLASH  &kp AT_SIGN     &kp LS(INT3)
+&mt LEFT_SHIFT KP_MINUS       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp KP_PLUS             &trans  &trans       &kp LEFT_BRACKET   &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp AMPERSAND  &kp DOLLAR
+&kp LC(Z)      &kp LC(X)      &kp LC(C)       &kp LC(V)       &kp PAGE_DOWN    &trans                  &trans  &kp PERCENT  &kp RIGHT_BRACE    &kp PIPE       &kp LEFT_BRACE  &kp CARET
 &trans         &trans         &trans         &trans         &trans         &trans               &trans          &trans                                          &trans
             >;
 
@@ -421,7 +421,7 @@
 &kp F1   &kp F2  &kp F3  &kp F4  &kp F5                                                    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp F11      &kp F12  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
 &kp LESS_THAN  &kp LS(MINUS)  &kp GREATER_THAN  &kp LS(INT1)  &kp HASH  &kp NUBS      &trans  &kp LEFT_BRACKET  &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp EQUAL
-&trans   &trans          &trans          &LANG5            &trans             &trans        &trans         &trans                              &trans
+&trans   &trans          &trans          &kp LANG5            &trans             &trans        &trans         &trans                              &trans
             >;
         };
 

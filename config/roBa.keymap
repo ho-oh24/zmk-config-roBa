@@ -398,7 +398,7 @@
         default_layer {
             bindings = <
 &kp Q                &kp X          &kp U              &comma_shift_morph &dot_shift_morph                                                             &kp F             &kp Z               &kp R           &kp Y           &kp P
-&mt RIGHT_CONTROL E  &mt LEFT_ALT I &mt LEFT_CONTROL A &mt LEFT_SHIFT O   &mt_minus_morph LEFT_WIN 0  &kp PRINTSCREEN             &kp CMENU            &mt LEFT_WIN K  &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT S  &mt RIGHT_CONTROL H
+&mt RIGHT_CONTROL E  &mt LEFT_ALT I &mt LEFT_CONTROL A &mt LEFT_SHIFT O   &mt_minus_morph LEFT_WIN 0  &kp PRINTSCREEN             &kp K_CMENU            &mt LEFT_WIN K  &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT S  &mt RIGHT_CONTROL H
 &kp J                &kp L          &kp C              &kp V              &quot_shift_morph           &caps_word                  &kp SLCK             &kp G           &kp D             &kp M               &kp W           &kp B
 &kp LEFT_WIN         &kp ESCAPE  &mo 3  &lt 1 BACKSPACE  &kp SPACE  &lt_slash_morph 6 0                                           &lt_slash_morph 3 0  &lt 2 ENTER                                                           &kp DELETE
             >;
@@ -410,7 +410,7 @@
 &kp ESCAPE               &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP                                      &trans            &kp RIGHT_BRACKET  &kp BACKSLASH         &kp AT_SIGN     &kp LS(INT3)
 &mt LEFT_SHIFT KP_MINUS  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp KP_PLUS      &kp INSERT              &trans  &kp LEFT_BRACKET  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp AMPERSAND   &kp DOLLAR
 &kp LC(Z)                &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp PAGE_DOWN    &kp CAPSLOCK            &trans  &kp PERCENT       &kp RIGHT_BRACE    &kp PIPE              &kp LEFT_BRACE  &kp CARET
-&trans                   &trans          &trans          &trans           &trans           &LS(N4)                 &LS(N4)  &trans                                                                     &trans
+&trans                   &trans          &trans          &trans           &trans           &kp LS(N4)                 &kp LS(N4)  &trans                                                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -458,7 +458,7 @@
 &trans      &trans        &trans        &trans        &trans                             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5  &kp F6      &kp F7         &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
 &kp F13     &kp F14       &kp F15       &kp F16       &kp F17 &kp F18     &kp F19        &kp F20       &kp F21       &kp F22       &kp F23       &kp F24
-&bootloader &trans        &trans        &trans        &trans  &trans      &bt BT_CLR_ALL &BT_CLR                                                 &bt BT_CLR_ALL
+&bootloader &trans        &trans        &trans        &trans  &trans      &bt BT_CLR_ALL &bt BT_CLR                                                 &bt BT_CLR_ALL
             >;
         };
     };

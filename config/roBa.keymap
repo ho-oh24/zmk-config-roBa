@@ -397,20 +397,20 @@
 
         default_layer {
             bindings = <
-&kp Q                &kp X          &kp U          &comma_shift_morph      &dot_shift_morph                                                            &kp F           &kp Z           &kp R           &kp Y          &kp P
-&mt RIGHT_CONTROL E   &mt LEFT_ALT I &mt LEFT_CONTROL A  &mt LEFT_SHIFT O  &mt_minus_morph LEFT_WIN 0  &caps_word                    &none  &mt LEFT_WIN K  &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT S  &mt RIGHT_CONTROL H
-&kp J                &kp L          &kp C          &kp V          &quot_shift_morph        &none                       &none  &kp G           &kp D           &kp M           &kp W          &kp B
-&kp LEFT_WIN         &kp ESCAPE  &mo 3  &lt 1 BACKSPACE  &kp SPACE  &lt_slash_morph 6 0      &lt_slash_morph 3 0  &lt 2 ENTER                        &kp DELETE
+&kp Q                &kp X          &kp U              &comma_shift_morph &dot_shift_morph                                                             &kp F             &kp Z               &kp R           &kp Y           &kp P
+&mt RIGHT_CONTROL E  &mt LEFT_ALT I &mt LEFT_CONTROL A &mt LEFT_SHIFT O   &mt_minus_morph LEFT_WIN 0  &kp PRINTSCREEN             &kp CMENU            &mt LEFT_WIN K  &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT S  &mt RIGHT_CONTROL H
+&kp J                &kp L          &kp C              &kp V              &quot_shift_morph           &caps_word                  &kp SLCK             &kp G           &kp D             &kp M               &kp W           &kp B
+&kp LEFT_WIN         &kp ESCAPE  &mo 3  &lt 1 BACKSPACE  &kp SPACE  &lt_slash_morph 6 0                                           &lt_slash_morph 3 0  &lt 2 ENTER                                                           &kp DELETE
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         NAV {
             bindings = <
-&kp ESCAPE     &kp HOME       &kp UP_ARROW    &kp END         &kp PAGE_UP                                      &kp HASH     &kp RIGHT_BRACKET  &kp BACKSLASH  &kp AT_SIGN     &kp LS(INT3)
-&mt LEFT_SHIFT KP_MINUS       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp KP_PLUS             &trans  &trans       &kp LEFT_BRACKET   &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp AMPERSAND  &kp DOLLAR
-&kp LC(Z)      &kp LC(X)      &kp LC(C)       &kp LC(V)       &kp PAGE_DOWN    &trans                  &trans  &kp PERCENT  &kp RIGHT_BRACE    &kp PIPE       &kp LEFT_BRACE  &kp CARET
-&trans         &trans         &trans         &trans         &trans         &trans               &trans          &trans                                          &trans
+&kp ESCAPE               &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP                                      &trans            &kp RIGHT_BRACKET  &kp BACKSLASH         &kp AT_SIGN     &kp LS(INT3)
+&mt LEFT_SHIFT KP_MINUS  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp KP_PLUS      &kp INSERT              &trans  &kp LEFT_BRACKET  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp AMPERSAND   &kp DOLLAR
+&kp LC(Z)                &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp PAGE_DOWN    &kp CAPSLOCK            &trans  &kp PERCENT       &kp RIGHT_BRACE    &kp PIPE              &kp LEFT_BRACE  &kp CARET
+&trans                   &trans          &trans          &trans           &trans           &LS(N4)                 &LS(N4)  &trans                                                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -418,27 +418,27 @@
 
         FN_NUM {
             bindings = <
-&kp F1   &kp F2  &kp F3  &kp F4  &kp F5                                                    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp F11      &kp F12  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp LESS_THAN  &kp LS(MINUS)  &kp GREATER_THAN  &kp LS(INT1)  &kp HASH  &kp NUBS      &trans  &kp LEFT_BRACKET  &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp EQUAL
-&trans   &trans          &trans          &kp LANG5            &trans             &trans        &trans         &trans                              &trans
+&kp F1        &kp F2        &kp F3            &kp F4        &kp F5        &kp F6       &kp F7   &kp F8            &kp F9        &kp F10
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5  &kp F11      &kp F12  &kp NUMBER_6      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&kp LESS_THAN &kp LS(MINUS) &kp GREATER_THAN  &kp LS(INT1)  &kp HASH      &kp LS(BSLH) &trans   &kp LEFT_BRACKET  &kp KP_PLUS   &kp KP_MINUS  &kp KP_MULTIPLY  &kp EQUAL
+&trans   &trans          &trans          &kp GRAVE            &trans             &trans        &trans         &trans                              &trans
             >;
         };
 
         NUMPAD_MEDIA {
             bindings = <
-&kp KP_MULTIPLY  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS                       &trans             &kp INSERT       &kp PAUSE_BREAK    &kp PRINTSCREEN  &trans
-&kp KP_N0        &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_DOT    &trans      &trans  &kp C_VOLUME_UP    &kp C_PREVIOUS   &kp C_PLAY_PAUSE   &kp C_NEXT       &kp C_MUTE
-&kp KP_DIVIDE    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MINUS  &trans      &trans  &kp C_VOLUME_DOWN  &kp CAPSLOCK     &trans             &kp KP_NUMLOCK   &trans
-&trans           &trans     &trans     &trans     &trans     &trans          &trans            &trans                                                    &trans
+&kp KP_MULTIPLY  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS                                 &trans             &kp C_REWIND     &kp C_PLAY        &kp C_FAST_FORWARD &kp PRINTSCREEN
+&kp KP_N0        &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_DOT   &kp KP_NUMLOCK   &kp C_BRI_UP  &kp C_VOLUME_UP    &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT         &kp C_MUTE
+&kp KP_DIVIDE    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MINUS &kp SCROLLLOCK   &kp C_BRI_DN  &kp C_VOLUME_DOWN  &trans           &kp C_PAUSE       &kp PAUSE_BREAK    &kp C_DATA_ON_SCREEN
+&trans           &trans     &trans     &trans     &trans     &trans             &trans        &trans                                                                   &trans
             >;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB4  &mkp MB3    &mkp MB5    &kp LEFT_SHIFT
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4  &mkp MB1  &mo 5  &mkp MB2  &mkp MB5
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &kp RIGHT_CONTROL
+&trans  &trans  &trans  &trans  &trans                      &trans    &mkp MB4  &mkp MB3  &mkp MB5   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4  &mkp MB1  &mo 5     &mkp MB2   &mkp MB5
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans    &trans    &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
@@ -455,10 +455,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &trans        &trans        &trans        &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&trans      &trans        &trans        &trans        &trans                             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5  &kp F6      &kp F7         &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
+&kp F13     &kp F14       &kp F15       &kp F16       &kp F17 &kp F18     &kp F19        &kp F20       &kp F21       &kp F22       &kp F23       &kp F24
+&bootloader &trans        &trans        &trans        &trans  &trans      &bt BT_CLR_ALL &BT_CLR                                                 &bt BT_CLR_ALL
             >;
         };
     };

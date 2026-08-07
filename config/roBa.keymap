@@ -405,7 +405,7 @@
 &kp Q                &kp X          &kp U              &comma_shift_morph &dot_shift_morph                                                             &kp F           &kp Z             &kp R               &kp Y           &kp P
 &mt RIGHT_CONTROL E  &mt LEFT_ALT I &mt LEFT_CONTROL A &mt LEFT_SHIFT O   &mt_minus_morph LEFT_WIN 0  &kp PRINTSCREEN             &kp K_CMENU          &mt LEFT_WIN K  &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT S  &mt RIGHT_CONTROL H
 &kp J                &kp L          &lt 6 C            &lt 3 V            &quot_shift_morph           &caps_word                  &kp SLCK             &kp G           &lt 3 D           &lt 6 M             &kp W           &kp B
-&kp LEFT_WIN         &kp ESCAPE     &lt 3 delete       &lt 1 BACKSPACE    &kp SPACE  &lt_slash_morph 6 0                                           &lt_slash_morph 3 0  &lt 2 ENTER                                                           &kp DELETE
+&kp LEFT_WIN         &kp ESCAPE     &lt 3 DELETE       &lt 1 BACKSPACE    &kp SPACE  &lt_slash_morph 6 0                                           &lt_slash_morph 3 0  &lt 2 ENTER                                                           &kp DELETE
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
@@ -441,7 +441,7 @@
 
         MOUSE {
             bindings = <
-&trans    &trans   &trans    &trans     &trans                      &trans    &mkp MB4   &mkp MB3  &mkp MB5   &trans
+&trans    &trans   &trans    &trans     &trans                       &trans    &mkp MB4   &mkp MB3  &mkp MB5   &trans
 &trans    &trans   &trans    &trans     &trans   &trans      &trans  &mkp MB4  &mkp MB1   &mo 5     &mkp MB2   &mkp MB5
 &kp RCTRL &kp LALT &kp LCTRL &kp LSHIFT &kp LWIN &trans      &trans  &kp LWIN  &kp LSHIFT &kp LCTRL &kp LALT   &kp RCTRL
 &trans    &trans   &trans    &trans     &trans   &trans      &trans  &trans                                &trans
@@ -463,7 +463,7 @@
 &trans      &trans        &trans        &trans        &trans                             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5  &kp F6      &kp F7         &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
 &kp F13     &kp F14       &kp F15       &kp F16       &kp F17 &kp F18     &kp F19        &kp F20       &kp F21       &kp F22       &kp F23       &kp F24
-&bootloader &kp K_SLEEP   &kp C_SLEEP   K_MENU        &trans  &trans      &bt BT_CLR_ALL &bt BT_CLR                                                 &bt BT_CLR_ALL
+&bootloader &kp K_SLEEP   &kp C_SLEEP   &kp K_MENU        &trans  &trans      &bt BT_CLR_ALL &bt BT_CLR                                                 &bt BT_CLR_ALL
             >;
         };
     };

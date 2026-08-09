@@ -17,8 +17,8 @@
 };
 
 &trackball {
-    automouse-layer = <7>;
-    scroll-layers = <4>;
+    automouse-layer = <6>;
+    scroll-layers = <7>;
 
     // arrows {
     //     layers = <3>;
@@ -422,8 +422,18 @@
             bindings = <
 &kp Q                &kp X          &kp U              &comma_shift_morph &dot_shift_morph                                                        &kp F           &kp Z             &kp R               &kp Y           &kp P
 &mt RIGHT_CONTROL E  &mt LEFT_ALT I &mt LEFT_CONTROL A &mt LEFT_SHIFT O   &mt_minus_morph LEFT_WIN 0  &kp LC(C)              &kp LC(V)            &mt LEFT_WIN K  &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT S  &mt RIGHT_CONTROL H
-&kp J                &kp L          &lt 5 C            &lt 3 V            &quot_shift_morph           &kp PRINTSCREEN        &caps_word           &kp G           &lt 3 D           &lt 5 M             &kp W           &kp B
-&tog 3         &kp ESCAPE     &lt 3 DELETE       &lt 1 BACKSPACE    &kp SPACE  &lt_slash_morph 5 0                                           &lt_slash_morph 3 0  &lt 2 ENTER                                           &kp SLCK
+&kp J                &kp L          &lt 5 C            &lt 4 V            &quot_shift_morph           &kp PRINTSCREEN        &caps_word           &kp G           &lt 4 D           &lt 5 M             &kp W           &kp B
+&tog 4         &kp ESCAPE     &lt 4 DELETE       &lt 2 BACKSPACE    &kp SPACE  &lt_slash_morph 5 0                                           &lt_slash_morph 4 0  &lt 3 ENTER                                           &kp SLCK
+            >;
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+        };
+
+        QWERTY {
+            bindings = <
+&kp Q                &kp W          &kp E              &kp R             &kp T                                                                   &kp Y           &kp U             &kp I               &kp O             &kp P
+&mt RIGHT_CONTROL A  &mt LEFT_ALT S &mt LEFT_CONTROL D &mt LEFT_SHIFT F  &mt LEFT_WIN G              &caps_word             &kp K_CMENU          &mt LEFT_WIN H  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L    &mt RIGHT_CONTROL SEMICOLON
+&kp Z                &kp X          &kp C              &kp V             &kp B                       &kp PRINTSCREEN        &kp SLCK             &kp N           &kp M             &comma_shift_morph  &dot_shift_morph  &slash_shift_morph
+&trans               &kp ESCAPE     &lt 4 DELETE       &lt 2 BACKSPACE   &kp SPACE  &lt_slash_morph 5 0                                           &lt_slash_morph 4 0  &lt 3 ENTER                                       &trans
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
@@ -433,7 +443,7 @@
 &kp ESCAPE               &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP                                      &trans            &kp RIGHT_BRACKET  &kp BACKSLASH         &kp AT_SIGN     &kp LS(INT3)
 &mt LEFT_SHIFT KP_MINUS  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp KP_PLUS      &kp INSERT              &trans  &kp LEFT_BRACKET  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp AMPERSAND   &kp DOLLAR
 &kp LC(Z)                &kp LC(Z)       &kp ESCAPE      &kp LS(LC(Z))    &kp PAGE_DOWN    &kp CAPSLOCK            &trans  &kp PERCENT       &kp RIGHT_BRACE    &kp PIPE              &kp LEFT_BRACE  &kp CARET
-&tog 3                   &trans          &trans          &trans           &trans           &kp LS(N4)                 &kp LS(N4)  &trans                                                              &tog 6
+&tog 4                   &trans          &trans          &trans           &trans           &kp LS(N4)                 &kp LS(N4)  &trans                                                              &tog 1
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -457,16 +467,6 @@
             >;
         };
 
-        SCROLL {
-            bindings = <
-            
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
         layer_6 {
             bindings = <
 &trans      &trans        &trans        &trans        &trans                             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
@@ -476,22 +476,21 @@
             >;
         };
 
-        QWERTY {
-            bindings = <
-&kp Q                &kp W          &kp E              &kp R             &kp T                                                                   &kp Y           &kp U             &kp I               &kp O             &kp P
-&mt RIGHT_CONTROL A  &mt LEFT_ALT S &mt LEFT_CONTROL D &mt LEFT_SHIFT F  &mt LEFT_WIN G              &caps_word             &kp K_CMENU          &mt LEFT_WIN H  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L    &mt RIGHT_CONTROL SEMICOLON
-&kp Z                &kp X          &kp C              &kp V             &kp B                       &kp PRINTSCREEN        &kp SLCK             &kp N           &kp M             &comma_shift_morph  &dot_shift_morph  &slash_shift_morph
-&trans               &kp ESCAPE     &lt 3 DELETE       &lt 1 BACKSPACE   &kp SPACE  &lt_slash_morph 5 0                                           &lt_slash_morph 3 0  &lt 2 ENTER                                       &trans
-            >;
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
-        };
-
         MOUSE {
             bindings = <
 &trans    &trans   &trans    &trans     &trans                       &trans    &mkp MB4   &mkp MB3  &mkp MB5   &kp RCTRL
-&trans    &trans   &trans    &trans     &trans   &trans      &trans  &mkp MB4  &mkp MB1   &mo 4     &mkp MB2   &mkp MB5
+&trans    &trans   &trans    &trans     &trans   &trans      &trans  &mkp MB4  &mkp MB1   &mo 7     &mkp MB2   &mkp MB5
 &kp RCTRL &kp LALT &kp LCTRL &kp LSHIFT &kp LWIN &trans      &trans  &kp LWIN  &kp LSHIFT &kp LCTRL &kp LALT   &kp RCTRL
 &trans    &trans   &trans    &trans     &trans   &trans      &trans  &trans                                &trans
+            >;
+        };
+
+        SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };

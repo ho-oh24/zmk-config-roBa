@@ -423,17 +423,17 @@
 &kp Q                &kp X          &kp U              &comma_shift_morph &dot_shift_morph                                                        &kp F           &kp Z             &kp R               &kp Y           &kp P
 &mt RIGHT_CONTROL E  &mt LEFT_ALT I &mt LEFT_CONTROL A &mt LEFT_SHIFT O   &mt_minus_morph LEFT_WIN 0  &kp LC(C)              &kp LC(V)            &mt LEFT_WIN K  &mt LEFT_SHIFT T  &mt LEFT_CONTROL N  &mt LEFT_ALT S  &mt RIGHT_CONTROL H
 &kp J                &kp L          &lt 5 C            &lt 4 V            &quot_shift_morph           &kp PRINTSCREEN        &caps_word           &kp G           &lt 4 D           &lt 5 M             &kp W           &kp B
-&tog 4         &kp ESCAPE     &lt 4 DELETE       &lt 2 BACKSPACE    &kp SPACE  &lt_slash_morph 5 0                                           &lt_slash_morph 4 0  &lt 3 ENTER                                           &kp SLCK
+&tog 4         &kp ESCAPE     &lt 4 DELETE       &lt 2 BACKSPACE    &kp SPACE  &lt 5 ENTER                                   &lt_slash_morph 4 0  &lt 3 ENTER                                           &kp SLCK
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         QWERTY {
             bindings = <
-&kp Q                &kp W          &kp E              &kp R             &kp T                                                                   &kp Y           &kp U             &kp I               &kp O             &kp P
-&mt RIGHT_CONTROL A  &mt LEFT_ALT S &mt LEFT_CONTROL D &mt LEFT_SHIFT F  &mt LEFT_WIN G              &caps_word             &kp K_CMENU          &mt LEFT_WIN H  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L    &mt RIGHT_CONTROL SEMICOLON
-&kp Z                &kp X          &kp C              &kp V             &kp B                       &kp PRINTSCREEN        &kp SLCK             &kp N           &kp M             &comma_shift_morph  &dot_shift_morph  &slash_shift_morph
-&trans               &kp ESCAPE     &lt 4 DELETE       &lt 2 BACKSPACE   &kp SPACE  &lt_slash_morph 5 0                                           &lt_slash_morph 4 0  &lt 3 ENTER                                       &trans
+&kp Q                &kp W            &kp E              &kp R             &kp T                                                                   &kp Y           &kp U             &kp I                   &kp O             &kp P
+&kp A                &kp S            &kp D              &kp F             &kp G                       &caps_word             &kp K_CMENU          &kp H           &kp J             &kp K                   &kp L             &kp SEMICOLON
+&kp Z                &kp X            &kp C              &kp V             &kp B                       &kp PRINTSCREEN        &kp SLCK             &kp N           &kp M             &comma_shift_morph  &dot_shift_morph  &slash_shift_morph
+&kp LEFT_ALT         &kp LEFT_CONTROL &kp LEFT_SHIFT     &lt 2 BACKSPACE   &kp SPACE  &lt_slash_morph 5 0                                           &lt_slash_morph 4 0  &lt 3 ENTER                                       &trans
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
